@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISCOK KAWAII - Pisang Coklat Kekinian</title>
+
+    <!-- Font & Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon / Icon di tab browser -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co.com/Qvcf0MFR/IMG-20251019-WA0054.jpg">
+
+    <!-- Open Graph untuk share di sosmed -->
+    <meta property="og:title" content="PISCOK KAWAII - Pisang Coklat Kekinian">
+    <meta property="og:description" content="Pisang Coklat Kekinian dengan berbagai varian rasa yang lezat dan menggugah selera.">
+    <meta property="og:image" content="https://i.ibb.co.com/Qvcf0MFR/IMG-20251019-WA0054.jpg">
+    <meta property="og:url" content="https://websitekamu.com"> <!-- ganti dengan domain kamu -->
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card (opsional tapi penting jika dishare ke X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PISCOK KAWAII">
+    <meta name="twitter:description" content="Pisang Coklat Kekinian dengan berbagai varian rasa yang menggugah selera.">
+    <meta name="twitter:image" content="https://i.ibb.co.com/Qvcf0MFR/IMG-20251019-WA0054.jpg">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fas fa-ice-cream"></i>PISCOK KAWAII</a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>PISCOK KAWAII</h1>
+            <p>Pisang Coklat Kekinian dengan Berbagai Varian Rasa yang Lezat dan Menggugah Selera</p>
+            <a href="#menu" class="btn">Lihat Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>Tentang Kami</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <h3>Kisah PISCOK KAWAII</h3>
+                <p>PISCOK KAWAII didirikan dengan visi untuk menghadirkan pengalaman kuliner yang menyenangkan melalui pisang coklat kekinian dengan berbagai varian rasa unik. Kami percaya bahwa makanan sederhana bisa menjadi istimewa dengan sentuhan kreatif.</p>
+                <p>Dengan bahan-bahan berkualitas tinggi dan inovasi rasa yang terus berkembang, kami berkomitmen untuk memberikan produk terbaik kepada pelanggan kami. Setiap gigitan PISCOK KAWAII dirancang untuk membawa kebahagiaan.</p>
+                <p>Kami telah menjadi favorit banyak kalangan, dari anak-anak hingga dewasa, yang menyukai camilan lezat dan menarik.</p>
+                <a href="#contact" class="btn">Hubungi Kami</a>
+            </div>
+            <div class="about-image fade-in">
+                <img src="https://i.ibb.co.com/0RLh9HN7/IMG-20251020-WA0005.jpg" alt="Pisang Coklat">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-title">
+            <h2>Menu Kami</h2>
+        </div>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">Semua</button>
+            <button class="category-btn" data-category="piscok">PISCOK</button>
+            <button class="category-btn" data-category="topping">Topping</button>
+        </div>
+        <div class="menu-items" id="menu-items-container">
+            <!-- Menu items akan diisi oleh JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Hubungi Kami</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Telepon/WhatsApp</h3>
+                        <p>+62 881-0112-56687</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>Jam Operasional</h3>
+                        <p>Senin - Minggu: 10.00 - 22.00 WIB</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <div>
+                        <h3>Media Sosial</h3>
+                        <p>@piscokkawaii (Instagram)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form fade-in">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nomor WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Pesanan" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Catatan Pesanan" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Pesan Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>PISCOK KAWAII</h3>
+                <p>Pisang Coklat Kekinian dengan berbagai varian rasa yang lezat dan menggugah selera. Nikmati pengalaman kuliner yang menyenangkan dengan PISCOK KAWAII.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/piscok_kawaii?igsh=ZG4zOWtic3UyMmFo"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/62881011256687?text=Hallo%20kak"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@piscok.kawaii?_t=ZS-90hsR65j8XC&_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/16qz2vQwer/"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Link Cepat</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i>+62 881-0112-56687</li>
+                    <li><i class="fas fa-clock"></i> Setiap Hari</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PISCOK KAWAII. All Rights Reserved.</p>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
