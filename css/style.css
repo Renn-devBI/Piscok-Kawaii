@@ -1,4 +1,5 @@
-        /* Reset dan variabel */
+       
+       /* Reset dan variabel */
         * {
             margin: 0;
             padding: 0;
@@ -24,6 +25,41 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+
+        /* Logo & Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7%;
+    background: #ff6b81; /* contoh warna, sesuaikan dengan tema kamu */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara gambar logo dan teks */
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 40px;     /* Ukuran logo */
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive logo untuk HP */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 32px;
+        width: 32px;
+    }
+    .logo-text {
+        font-size: 1.1rem;
+    }
+}
+
 
         /* Header dan Navbar */
         header {
