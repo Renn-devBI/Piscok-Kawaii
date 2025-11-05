@@ -1,4 +1,5 @@
-        /* Reset dan variabel */
+       
+       /* Reset dan variabel */
         * {
             margin: 0;
             padding: 0;
@@ -24,6 +25,41 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+
+        /* Logo & Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7%;
+    background: #ff6b81; /* contoh warna, sesuaikan dengan tema kamu */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara gambar logo dan teks */
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 40px;     /* Ukuran logo */
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive logo untuk HP */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 32px;
+        width: 32px;
+    }
+    .logo-text {
+        font-size: 1.1rem;
+    }
+}
+
 
         /* Header dan Navbar */
         header {
@@ -106,7 +142,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80');
+                        url('https://i.ibb.co.com/T6MGgVL/quality-restoration-20251020194358407.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -552,6 +588,88 @@
                 font-size: 2rem;
             }
         }
+
+        /* Testimoni Section */
+.testimoni {
+    background-color: #f9f9f9;
+    padding: 5rem 5%;
+}
+
+.testimoni-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimoni-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimoni-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimoni-card::before {
+    content: """;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 5rem;
+    color: rgba(255, 107, 107, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.testimoni-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimoni-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+.testimoni-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--dark-color);
+}
+
+.testimoni-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.testimoni-rating {
+    margin-bottom: 1rem;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.testimoni-text {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
 
         @media (max-width: 576px) {
             section {
